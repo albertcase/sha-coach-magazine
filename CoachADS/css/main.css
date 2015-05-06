@@ -1,0 +1,291 @@
+@font-face{
+	font-family: myFirstFont;
+	src: url("../font/Clarendon-Light.otf");
+
+}
+html,body{
+	
+	font-size: 65%;
+	
+}
+#heng{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background: #fffdfd url("../images/heng.png") no-repeat center;
+    background-size: 70% auto;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+/* 设备竖屏时调用该段css代码 */
+@media all and (orientation : portrait){
+	#heng{
+		display: none;
+	}
+}
+/* 设备横屏时调用该段css代码 */
+@media all and (orientation : landscape){
+	#heng{
+		display: inline-block;
+	}
+}
+/*.section img{	
+	height: 100%;
+	position: relative;
+	top:0;
+	left:0;
+}
+*/
+.section{
+	background: url("../images/bg.jpg") no-repeat center;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.arr{
+	width:42px;
+	height:36px;
+	background:url("../images/arr.png") no-repeat center;
+	background-size: 70% auto;
+	position:fixed;
+	left:44%;
+	z-index: 12;
+	bottom:1em;
+	/*margin: 0 0 0 -15px;*/
+	-webkit-animation: start 1.5s infinite ease-in-out;
+	-moz-animation: start 1.5s infinite ease-in-out;
+	animation: start 1.5s infinite ease-in-out;
+
+}
+
+@-webkit-keyframes start {
+	0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+	60% {opacity: 1;-webkit-transform: translate(0,0);}
+	100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@-moz-keyframes start {
+	0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+	60% {opacity: 1;-webkit-transform: translate(0,0);}
+	100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+@keyframes start {
+	0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+	60% {opacity: 1;-webkit-transform: translate(0,0);}
+	100% {opacity: 0;-webkit-transform: translate(0,-8px);}
+}
+
+
+
+/* section 1 */
+.top{
+	width:100%;
+	position: absolute;
+	top: 6%;
+
+	
+	
+}
+.logo{
+	width: 40%;
+}
+.header{
+	margin-top: 15px;
+	font-family: myFirstFont;
+	font-size: 3.2em;
+	width:100%;
+	line-height: 1.1em;
+	
+}
+.first{
+	font-family: myFirstFont;
+	font-size: .9em;
+	width:100%;
+}
+
+
+
+
+#movie{
+	width:100%;
+
+}
+
+/* section 2 */
+.content{
+	width: 80%;
+	position: absolute;
+	top:30%;
+	left: 10%;
+}
+.intro{
+	font-family: myFirstFont;
+	width: 100%;
+	font-size: 2.1em;
+	
+}
+/* section 5 */
+.scan{
+	width:90%;
+	margin-left: 5%;
+	line-height: 1.2em;
+	font-size: 2.1em;
+	border-bottom: 1px solid #000; 
+	font-family: myFirstFont;
+}
+.scan_con{
+	width:100%;
+}
+.scanImg{
+	width:40%;
+	position: absolute;
+	left:4%;
+}
+.scan_con p{
+	
+	width:60%;
+	text-align: left;
+	margin: 0 0 0 43%;
+	font-size: 2.1em;
+	line-height: 1.3em;
+	padding-top:3.9em;
+	font-family: myFirstFont;
+}
+.qrcode{
+	width:100%;
+	position: absolute;
+	top:30%;
+}
+.zoom{
+	display: none;
+	background: #fff;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top: 0%;
+	left:0%;
+
+}
+.close_btn{
+	width:6%;
+	float: right;
+	margin:6px 6px 10px 0;
+
+}
+.end{
+	margin-top: 10%;
+}
+
+/*share img*/
+.shareimg{
+    position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+/* loading  */
+
+.loading{
+	width: 100%;
+	text-align: center;
+	margin: 50% auto 0 auto;
+	font-family: myFirstFont;
+}
+.car{
+	width:50%;
+}
+.spinner > div {
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 8px;
+  -webkit-animation: bouncedelay 2s infinite ease-in-out;
+  animation: bouncedelay 2s infinite ease-in-out;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.spinner .bounce3 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+@-webkit-keyframes bouncedelay {
+	0%, 80%, 100% { background-color: #000; }
+	40% { background-color: #848484;}
+}
+
+@keyframes bouncedelay {
+    0%, 80%, 100% { background-color: #000;} 
+	40% { background-color: #848484;}
+}
+.loading p{
+	font-size: 2.1em;
+	line-height: 1.5em;
+}
+@media only screen and (max-width: 320px) and (max-height:568px) {
+	.scan_con p{
+	
+		width:60%;
+		text-align: left;
+		margin: 0 0 0 43%;
+		font-size: 1.8em;
+		line-height: 1.3em;
+		padding-top:3.5em;
+		font-family: myFirstFont;
+	}
+}
+@media only screen and (max-width: 320px) and (max-height:480px) {
+	.top{
+		width:100%;
+		position: absolute;
+		top: 4%;
+	}
+	.header{
+		margin-top: 10px;
+		font-family: myFirstFont;
+		font-size: 2.8em;
+		width:100%;
+		line-height: 1.1em;
+	
+	}
+	.first{
+		font-family: myFirstFont;
+		font-size: .9em;
+		width:100%;
+	}
+	.content img{
+		width:80%;
+	}
+	.arr{
+		width:42px;
+		height:36px;
+		background:url("../images/arr.png") no-repeat center;
+		background-size: 50% auto;
+		position:fixed;
+		left:43%;
+	}		
+}
+
+
+
+
+
+
+
