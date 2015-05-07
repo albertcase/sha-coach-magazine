@@ -12,14 +12,17 @@
 			slidesNavigation: false,
 			continuousVertical: false,
 
-			/*要求出现原来的poster image
+			
 			afterLoad: function(anchorLink, index){
-				if(index == 1){
-					x.load();
+				if(index == 5){
+					$(".arr").hide();
 
+				}
+				else{
+					$(".arr").show();
 				}		
 			},
-			*/
+			
 			/*onLeave: function(index, nextIndex, direction){
 	            if(index == 1 && direction =='down'){
 	                x.pause();
@@ -39,7 +42,7 @@
         $(".close_btn").on("click",function(){
         	$(".zoom").hide();
         });
-        
+
         
 
  	})

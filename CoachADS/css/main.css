@@ -3,6 +3,7 @@
 	src: url("../font/Clarendon-Light.otf");
 
 }
+
 html,body{
 	
 	font-size: 65%;
@@ -51,7 +52,7 @@ html,body{
 	height:36px;
 	background:url("../images/arr.png") no-repeat center;
 	background-size: 70% auto;
-	position:fixed;
+	position:absolute;
 	left:44%;
 	z-index: 12;
 	bottom:1em;
@@ -101,7 +102,7 @@ html,body{
 	
 }
 .first{
-	font-family: myFirstFont;
+	font-family: 'SimSun';
 	font-size: .9em;
 	width:100%;
 }
@@ -122,7 +123,7 @@ html,body{
 	left: 10%;
 }
 .intro{
-	font-family: myFirstFont;
+	font-family: 'SimSun';
 	width: 100%;
 	font-size: 2.1em;
 	
@@ -134,7 +135,7 @@ html,body{
 	line-height: 1.2em;
 	font-size: 2.1em;
 	border-bottom: 1px solid #000; 
-	font-family: myFirstFont;
+	font-family: 'SimSun';
 }
 .scan_con{
 	width:100%;
@@ -152,7 +153,7 @@ html,body{
 	font-size: 2.1em;
 	line-height: 1.3em;
 	padding-top:3.9em;
-	font-family: myFirstFont;
+	font-family: 'SimSun';
 }
 .qrcode{
 	width:100%;
@@ -167,6 +168,7 @@ html,body{
 	position: absolute;
 	top: 0%;
 	left:0%;
+	z-index: 9999;
 
 }
 .close_btn{
@@ -266,7 +268,7 @@ html,body{
 	
 	}
 	.first{
-		font-family: myFirstFont;
+		font-family: 'SimSun';
 		font-size: .9em;
 		width:100%;
 	}
@@ -278,7 +280,7 @@ html,body{
 		height:36px;
 		background:url("../images/arr.png") no-repeat center;
 		background-size: 50% auto;
-		position:fixed;
+		position:absolute;
 		left:43%;
 	}		
 }
