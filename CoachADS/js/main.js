@@ -1,6 +1,19 @@
 
 ;(function($){
     $(function(){
+
+       var video = new tvp.VideoInfo();   
+
+       video.setVid("b001672wkoe");
+       var playerW = parseInt($(window).width());
+	   var playerH = playerW*9/16;
+       var player = new tvp.Player(playerW,playerH);	       
+       player.setCurVideo(video);
+       player.addParam("pic","images/1.jpg");
+       player.addParam("autoplay",0);
+       player.addParam("extvars",{showend:0});
+       player.write("mod_player");
+       
 		window.location.hash= '';
         var x = document.getElementById("movie"); 
 		$('#fullpage').fullpage({
@@ -22,12 +35,12 @@
 				}		
 			},
 			
-			/*onLeave: function(index, nextIndex, direction){
+			onLeave: function(index, nextIndex, direction){
 	            if(index == 1 && direction =='down'){
-	                x.pause();
+	               player.pause();
 
 	            }
-        	}*/
+        	}
 		});
 		/*$("#vcover").on('click', function(){
 			$("#vcover").hide();
