@@ -56,9 +56,37 @@
         });
 
 
+
+
+
  	})
 
 })(jQuery)
+
+
+
+	$(document).ready(function(){
+	//=========资源加载=========
+	    var loader = new WxMoment.Loader();
+	    //添加一个资源
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/1.jpg');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/arr.png');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/bg.jpg');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/close.png');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/kv.png');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/loading.png');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/logo.png');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/pic-01.jpg');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/pic-02.jpg');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/pic-03.jpg');
+	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/qrcode.png');
+	    //监听资源加载完成事件
+	    loader.addCompletionListener(function () {
+	        console.log('加载完成');
+	    });
+	    //启动资源加载管理器
+	    loader.start();
+	})
 	
 
 
