@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<title>Coach蔻驰官方账号</title>
+	<title>人生第一位导师</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="format-detection" content="telephone=no">
 	<!--禁用手机号码链接(for iPhone)-->
@@ -21,11 +21,18 @@
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player_lite.js" charset="utf-8"></script>
+	<script src="http://cdnjs.gtimg.com/cdnjs/libs/wxmoment/0.0.1/wxmoment.min.js"></script>
 
 
 	</head>
 	<body>
-    	<div id="heng"></div>
+		<img src="images/kv.png" class="shareimg" />
+    	<div id="orientLayer" class="mod-orient-layer">
+		    <div class="mod-orient-layer__content">
+		        <i class="icon mod-orient-layer__icon-orient"></i>
+		        <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+		    </div>
+		</div>
     	<div class="zoom">
 			<a href="javascript:;">
 	    		<img src="images/close.png" width="100%" class="close_btn"/>
@@ -36,7 +43,7 @@
 		<span class="arr"></span>
 
 		<div id="fullpage">
-			<div class="section">
+			<div class="section pageone">
 				<div class="top">
 					<img src="images/logo.png" width="100%" class="logo"/>
 					<h1 class="header">#MYFIRSTCOACH#<br/><span class="first">人生第一位导师</span></h1>
@@ -76,7 +83,7 @@
 					<h1 class="header">#MYFIRSTCOACH#<br/><span class="first">人生第一位导师</span></h1>
 				</div>
 				<div class="content">
-					<img src="images/mama_3.jpg" width="100%" />
+					<img src="images/mama_4.png" width="100%" />
 					<p class="intro">妈妈，谢谢你让我学会发掘自己的潜力。</p>
 				</div>	
 			</div>
@@ -90,7 +97,9 @@
 				<div class="qrcode">
 					<p class="scan">长按下方二维码，关注COACH官方微信</p>
 					<div class="scan_con">
+						
 						<img src="images/qrcode.png" class="scanImg" width="100%"/>
+						
 						<p>这个母亲节，<br/>让我为你送上最美的祝福<br/>一起来感谢人生中的第一位导师</p>
 					</div>
 				</div>
@@ -115,6 +124,24 @@
 				       player.addParam("autoplay",0);
 				       player.addParam("extvars",{showend:0});
 				       player.write("mod_player");
+
+
+				       new WxMoment.Share({
+						    //分享到朋友圈
+						    'moment': {
+						        'title': "母亲节，感谢人生的第一位导师"
+						    },
+						    //分享给好友
+						    'friend': {
+						        'title': "母亲节，感谢人生的第一位导师",
+						        'desc': "你教会了我人生中的所有美好，感谢你，妈妈"
+						    },
+						    'global': {
+						        'img_url': basePath + "images/kv.png",
+						        'link': window.location.href.split("?")[0].replace(/([&|\?]{1})ticket=[\w\-]+(&?)/, '$1').replace(/\?$/, '')
+						    }
+						});
+				       new WxMoment.OrientationTip();
 
 					</script>
 		
