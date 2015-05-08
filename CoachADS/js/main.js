@@ -16,7 +16,6 @@
 			afterLoad: function(anchorLink, index){
 				if(index == 5){
 					$(".arr").hide();
-
 				}
 				else{
 					$(".arr").show();
@@ -43,7 +42,6 @@
         	$(".zoom").hide();
         });
 
-        
 
  	})
 
