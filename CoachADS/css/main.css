@@ -42,6 +42,11 @@ html,body{
 	left:0;
 }
 */
+
+#fullpage{
+	opacity: 0;
+}
+
 .section{
 	background: url("../images/bg.jpg") no-repeat center;
 	margin: 0 auto;
@@ -232,6 +237,18 @@ html,body{
 	margin: 50% auto 0 auto;
 	font-family: myFirstFont;
 }
+
+.loading.load2{
+	width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    background: #fff;
+    z-index: 10;
+    margin: -27% 0 0 -50%;
+}
+
 .car{
 	width:50%;
 }

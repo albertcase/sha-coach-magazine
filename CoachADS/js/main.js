@@ -82,6 +82,8 @@
 	    loader.addImage('http://wximg.qq.com/tmt/_events/20150508coach/dist/images/qrcode.png');
 	    //监听资源加载完成事件
 	    loader.addCompletionListener(function () {
+	    	$(".loading").hide();
+	    	$("#fullpage").animate({"opacity":1});
 	        console.log('加载完成');
 	    });
 	    //启动资源加载管理器
