@@ -1,47 +1,19 @@
+var LoadingImg = ["../images/1.jpg","../images/2.jpg","../images/3.jpg","../images/4.jpg",
+"../images/5.jpg","../images/6.jpg","../images/7.jpg","../images/bg.jpg","../images/index_img.jpg",
+"../images/kv.jpg","../images/loading.png","../images/logo.png","../images/start_btn.jpg"];
+$(".loading").fadeIn();
 
-;(function($){
-    $(function(){
-		window.location.hash= '';
+	;(function($){
+		$(function(){
+		
+			loading(LoadingImg);
 
-		$('#fullpage').fullpage({
-		sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff','#fff', '#fff','#fff', '#fff'],
-		anchors: ['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage','8thPage','9thPage', '10thPage', '11stPage','12ndPage'],    // 'lastPage', '6thPage'
-		menu: '#menu',
-		scrollingSpeed: 600,
-		css3: true,
-		slidesNavigation: false,
-		continuousVertical: false,
+	        $(".start_btn").on("click",function(){
+	            $(".page#index").hide();
+	            $(".page#element").show();
+	        });
 
-		afterLoad: function(anchorLink, index){
-            
-            
-			if(index == 12){
-				$('.arr').hide();
-			}
-			else{
-				$('.arr').show();
-			}
-			/*same method
-			if(anchorLink == '12ndPage'){
-				$('.arr').hide();
-			}
-			*/
-
-		}
-
-		});
-
- 	})
-
-})(jQuery)
-	
-
-
-
-
-
-
-
-
+		})
+	})(jQuery);
 
 
