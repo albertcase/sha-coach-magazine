@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <style>
+        html, body {height: 100%;-webkit-box-sizing: border-box;box-sizing: border-box;overflow: hidden;}
+        .wrap{width: 100%;height: 100%;overflow: hidden;}
+        .screen{width: 100%;height: 100%;overflow: hidden;-webkit-backface-visibility: hidden;-webkit-perspective: 1000;}
+    </style>
+    <script src="js/wxmoment.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <section class="screen screen1">
+
+            
+            <div class="top">
+                    <img src="images/logo.png" width="100%" class="logo"/>
+                    <h1 class="header">#MYFIRSTCOACH#<br/><span class="first">人生第一位导师</span></h1>
+                </div>  
+                <div class="video">
+                    <div id="mod_player"></div>
+                    
+                    <!-- <iframe frameborder="0" width="100%" height="100%" src="http://v.qq.com/iframe/player.html?vid=b001672wkoe&tiny=0&auto=0" allowfullscreen>
+                    </iframe> -->
+                    <!-- <video width="100%" height="100%" src="video/coachADS_10.mp4" autobuffer controls poster="images/1.jpg" id="movie">
+                    </video> -->
+                </div>
+
+
+        </section>
+        <section class="screen screen2">
+            2
+            <div class="screen-arrow"></div>
+        </section>
+        <section class="screen screen3">
+            3
+            <div class="screen-arrow"></div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        var pageSlider = new WxMoment.PageSlider({
+            pages: document.querySelectorAll('.screen')
+        });
+    </script>
+
+</body>
+<html>

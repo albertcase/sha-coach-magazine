@@ -69,13 +69,15 @@ html{
 .qrcode{
   margin: 20px 0 0 0;
   position: relative;
+  z-index: 9;
 }
 
 .arr{
   width: 10%;
   position: absolute;
-  bottom:2%;
+  bottom:3%;
   left: 45%;
+  z-index: 9;
   
   animation: arr_up 1.5s ease-in-out infinite;
   -webkit-animation: arr_up 1.5s ease-in-out infinite;
@@ -213,4 +215,42 @@ html{
     top: 12%;
     left: 10%;
   }  
+}
+
+
+.f-ofh {overflow: hidden; height: 100%!important; }        
+.f-hide { display: none!important; }                       
+
+
+.p-ct { position: relative; width: 100%; height: 100%; overflow: hidden; z-index: 8; background: url("../images/bg.jpg") no-repeat;
+  background-size: 100% auto; }
+.p-ct.fixed { overflow: hidden; }
+
+
+.m-page { position: absolute; top:0; left: 0; width:100%; height:100%; background: url("../images/bg.png") no-repeat center;
+  background-size: 90% 80%; }
+.m-page .page-con { position: relative; width: 100%; height: 100%; overflow: hidden; text-align: center; }
+.m-page.active { z-index:40; }
+.m-page.fixed { position: fixed; }
+.m-page.move {
+    -webkit-transition:all 0.5s ease-in-out;
+       -moz-transition:all 0.5s ease-in-out;
+        -ms-transition:all 0.5s ease-in-out;
+         -o-transition:all 0.5s ease-in-out;
+            transition:all 0.5s ease-in-out;
+}
+
+.translate-back{
+  width:100%;
+  height:100%;
+}
+
+.page{
+    width:100%;
+    height:100%;
+    overflow: auto;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
